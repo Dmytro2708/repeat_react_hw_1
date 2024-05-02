@@ -1,16 +1,23 @@
+import { UserList } from './UserList';
+
+import users from '../users.json';
+
+import styled from 'styled-components';
+import { GlobalStyle } from './GlobalStyle';
+
+const PageTitle = styled.h1`
+margin-top: auto;
+margin-bottom: 30px;
+color: orange;
+`;
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      Hello World!!!
+    <div>
+      <PageTitle>USERS</PageTitle>
+      <UserList users={users} />
+
+      <GlobalStyle/>
     </div>
   );
 };
