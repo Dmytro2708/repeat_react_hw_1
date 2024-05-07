@@ -22,7 +22,7 @@ export const Profile = ({
           <p>{location}</p>
         </div>
 
-        <ul>
+        {/* <ul>
           <li>
             <span>Followers </span>
             <span>{followers}</span>
@@ -35,7 +35,7 @@ export const Profile = ({
             <span>Likes </span>
             <span>{likes}</span>
           </li>
-        </ul>
+        </ul> */}
       </div>
     </div>
   );
