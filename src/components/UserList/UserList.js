@@ -1,13 +1,14 @@
-import { Profile } from './Profile';
+import { Profile } from '../Profile/Profile';
+import { List } from './UserList.styled';
 
 export const UserList = ({ users }) => {
   return (
-    <ul>
+    <List>
       {users.map(user => (
         <li key={user.id}>
           <Profile user={user} />
         </li>
       ))}
-    </ul>
+    </List>
   );
 };

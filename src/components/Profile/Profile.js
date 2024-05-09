@@ -14,15 +14,15 @@ export const Profile = ({
           <img
             src={avatar}
             alt={username}
-            width="120"
-            height="120"
+            width="80"
+            height="80"
           />
           <p>{username}</p>
           <p>@{tag}</p>
           <p>{location}</p>
         </div>
 
-        {/* <ul>
+        <ul>
           <li>
             <span>Followers </span>
             <span>{followers}</span>
@@ -35,7 +35,7 @@ export const Profile = ({
             <span>Likes </span>
             <span>{likes}</span>
           </li>
-        </ul> */}
+        </ul>
       </div>
     </div>
   );
